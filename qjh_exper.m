@@ -47,3 +47,12 @@
 % ax.XTickLabel = {'60','70','80','90'};
 % xlabel('引发剂加量');
 % ylabel('漏斗粘度/s','rotation',0,'Position',[0.0005 23.06 0]);
+
+%pH对粘度
+a = [2:6;26 38 43 43 43];
+plot(a(1, :),a(2,:),'b-o');
+ax = gca;
+ax.XTick = 2:6;
+ax.XTickLabel = {'2','3','4','5','6'};
+xlabel('反应时间/h');
+ylabel('漏斗粘度/s','rotation',0,'Position',[2 44 0]);
